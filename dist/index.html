@@ -11,7 +11,31 @@
 
 </head>
 <body>
-    <!--The root of comedy is trust-->
+
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId            : '198657257886213',
+                autoLogAppEvents : true,
+                xfbml            : true,
+                version          : 'v6.0'
+            });
+            let accessToken = 'EAAC0rX9J0gUBAJd5jXUpxDuJZCApBsg1WMklc7QZARkDDQwhlqyChP5F6CAQThDna4WvOxNZA2i26F5sTu5wsKvNgZA4x5KBxWojfRscwv012Y87RscUAC7Nt1p8O5L8xHKsgKYVFdzp3NmBMgTJY7MbDmZApl8NgXU9aCogqI2EgWeSyOWB7aGZBZANofa7NVWcqBZAVvx18AB5560iSbCejnzMzRi3mZAZAqw1WJAcnbbgZDZD';
+            FB.api(
+                '/152461164849955/events',
+                'GET',
+                { access_token: accessToken },
+                response => {
+                    console.log(response);
+                }
+            );
+        };
+    </script>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <script>
+
+    </script>
+
     <nav class="navbar">
         <div class="container">
             <img src="img/happy_gas_logo.jpg" alt="Happy Gas Logo" class="logo">
